@@ -5,7 +5,7 @@ import numpy as np
 from obspy import read, Trace
 from obspy.signal.filter import bandpass
 import matplotlib.pyplot as plt
-from functions_GJI_2017 import *
+from Functions_GJI_2017 import *
 
 
 def main():
