@@ -35,18 +35,18 @@ def main():
     dat_r1 = read(name_rec, debug_headers=True)
     # Get dt (in s) and delta (in Hz)
     dt = dat_s1[0].stats.delta
-    delta =1/dt
+    delta =int(1/dt)
     # Split the 1 day data into "len_time_win" segments
     dat_s = np.split(dat_s1[0].data, len_time_win)
     dat_r = np.split(dat_r1[0].data, len_time_win)
 
     cnt = 1
     q=0
-    print(np.size(methods))
+
     for ii in range(np.size(methods)):
         cnt = 1
         q=0
-        print(ii)
+
         for i in range(len(dat_s)):
             # Compute the waveforms 
             if methods[ii]=='1-bit':
@@ -84,11 +84,13 @@ def main():
 
         if ii+1<np.size(methods):
             plt.tick_params(axis='x', labelbottom='off')
+
  
     # Save data
     if  save_file:
         plt.savefig(save_file, dpi=400)
         plt.close()
+        print("Figure saved as " + save_file)
     else:
         plt.show()
 
