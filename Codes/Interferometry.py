@@ -83,7 +83,7 @@ def main():
             plt.xlabel('Time (s)')
 
         if ii+1<np.size(methods):
-            frame1.axes.get_xaxis().set_ticks([])
+            plt.tick_params(axis='x', labelbottom='off')
  
     # Save data
     if  save_file:
