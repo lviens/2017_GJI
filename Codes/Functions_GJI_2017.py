@@ -44,9 +44,8 @@ def one_bit(dat_s, dat_r, delta, tpm, std_control, count):
         fft_s = np.fft.fft(dat_s, n*5)
         fft_r = np.fft.fft(dat_r, n*5)
         cc_t1 = np.real(np.fft.ifft( (fft_r * np.conj(fft_s))))        
-        corr2 = np.concatenate((cc_t1[len(cc_t1)/2:], cc_t1[:len(cc_t1)/2]))
-        corr  = corr2[len(corr2)/2-tpm*delta:len(corr2)/2+tpm*delta]
-
+        corr2 = np.concatenate((cc_t1[int(len(cc_t1)/2):], cc_t1[:int(len(cc_t1)/2)]))
+        corr  = corr2[int(len(corr2)/2)-tpm*delta:int(len(corr2)/2)+tpm*delta]
         nodata = 0
         count +=1
     else:
@@ -94,8 +93,8 @@ def cross_corr(dat_s, dat_r, delta, tpm, std_control, count):
         fft_s = np.fft.fft(dat_s, n*5)
         fft_r = np.fft.fft(dat_r, n*5)
         cc_t1 = np.real(np.fft.ifft( (fft_r * np.conj(fft_s))))        
-        corr2 = np.concatenate((cc_t1[len(cc_t1)/2:], cc_t1[:len(cc_t1)/2]))
-        corr  = corr2[len(corr2)/2-tpm*delta:len(corr2)/2+tpm*delta]
+        corr2 = np.concatenate((cc_t1[int(len(cc_t1)/2):], cc_t1[:int(len(cc_t1)/2)]))
+        corr  = corr2[int(len(corr2)/2)-tpm*delta:int(len(corr2)/2)+tpm*delta]
         nodata = 0
         count +=1
     else:
@@ -145,8 +144,8 @@ def deconvolution_stab(dat_s, dat_r, delta, tpm, std_control, count, stab):
         sj = obssig.util.smooth(np.absolute(fft_s), stab)
 
         dec_t1 =  np.real(np.fft.ifft( (fft_r * np.conj(fft_s))/ (sj**2) ))
-        dec_t2 = np.concatenate((dec_t1[len(dec_t1)/2:], dec_t1[:len(dec_t1)/2]))
-        dec_t  = dec_t2[len(dec_t2)/2-tpm*delta:len(dec_t2)/2+tpm*delta]
+        dec_t2 = np.concatenate((dec_t1[int(len(dec_t1)/2):], dec_t1[:int(len(dec_t1)/2)]))
+        dec_t  = dec_t2[int(len(dec_t2)/2)-tpm*delta:int(len(dec_t2)/2)+tpm*delta]
         nodata = 0
         count +=1
     else:
@@ -198,17 +197,12 @@ def coherency_stab(dat_s, dat_r, delta, tpm, std_control, count, stab):
         si = obssig.util.smooth(np.absolute(fft_r), stab)
 
         coh_t1 =  np.real(np.fft.ifft( (fft_r * np.conj(fft_s))/ (si*sj) ))
-        coh_t2 = np.concatenate((coh_t1[len(coh_t1)/2:], coh_t1[:len(coh_t1)/2]))
-        coh_t  = coh_t2[len(coh_t2)/2-tpm*delta:len(coh_t2)/2+tpm*delta]
+        coh_t2 = np.concatenate((coh_t1[int(len(coh_t1)/2):], coh_t1[:int(len(coh_t1)/2)]))
+        coh_t  = coh_t2[int(len(coh_t2)/2)-tpm*delta:int(len(coh_t2)/2)+tpm*delta]
         nodata = 0
         count +=1
     else:
         coh_t = 0
         nodata = 1
     return coh_t, nodata, count
-
-
-
-
-
 
