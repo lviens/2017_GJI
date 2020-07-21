@@ -1,7 +1,7 @@
 # Viens L., M. Denolle, H. Miyake, S. Sakai, S. Nakagawa (2017), Retrieving impulse response function amplitudes from the ambient seismic field, Geophys. J. Int.
 
 ## Descrition:
-This repository contains the functions used in [Viens et al. (2017)](https://academic.oup.com/gji/article/210/1/210/3747441) long with an example
+This repository contains the functions used in [Viens et al. (2017)](https://academic.oup.com/gji/article/210/1/210/3747441) long with an example.
 
 * The Code folder contains:
   - Functions_GJI_2017.py -> Functions to compute cross-correlation, deconvolution, coherency of raw data, and cross-correlation of 1-bit data.
