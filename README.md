@@ -10,4 +10,4 @@ This repository contains the functions used in [Viens et al. (2017)](https://aca
   - station_2_1d.sac -> Same at station 2.
   - Foo.png -> Output of Interferometry.py.
 
-In this example, the anticausal and causal parts are strongly asymetric due to the location of the noise sources (Station_1 is closer to the ocean than Station_2).
+In this example, the anticausal and causal parts are strongly asymmetric due to the location of the noise sources (Station_1 is closer to the ocean than Station_2).
