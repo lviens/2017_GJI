@@ -6,7 +6,7 @@ This repository contains the functions used in [Viens et al. (2017)](https://aca
 * **Codes** folder:
   - Functions_GJI_2017.py: Functions to compute cross-correlation, deconvolution, coherency of raw data, and cross-correlation of 1-bit data.
   - Interferometry.py: runs the different techniques on 1 day of data recorded at "station_1" and "station_2". 
-* Data folder:
+* **Data** folder:
   - station_1_1d.sac: 1 day of data with a sampling rate of 4 Hz at station 1.
   - station_2_1d.sac: 1 day of data with a sampling rate of 4 Hz at station 2.
 * **Figures** fodler:
