@@ -1,8 +1,5 @@
 # Codes to compare the retrieval of impulse response function amplitudes with different methods ([Viens et al., 2017, GJI)](https://academic.oup.com/gji/article/210/1/210/3747441)
 
-
-The complete citation is: [Viens L., M. Denolle, H. Miyake, S. Sakai, S. Nakagawa (2017), Retrieving impulse response function amplitudes from the ambient seismic field, Geophys. J. Int.](https://academic.oup.com/gji/article/210/1/210/3747441)
-
 ## Description:
 This repository contains the functions used in [Viens et al. (2017)](https://academic.oup.com/gji/article/210/1/210/3747441) along with an example.
 
@@ -14,3 +11,5 @@ This repository contains the functions used in [Viens et al. (2017)](https://aca
   - Foo.png -> Output of Interferometry.py.
 
 In this example, the anticausal and causal parts are strongly asymmetric due to the location of the noise sources (Station_1 is closer to the ocean than Station_2).
+
+The complete citation is: [Viens L., M. Denolle, H. Miyake, S. Sakai, S. Nakagawa (2017), Retrieving impulse response function amplitudes from the ambient seismic field, Geophys. J. Int., 210, p. 210–222](https://academic.oup.com/gji/article/210/1/210/3747441)
