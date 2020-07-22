@@ -1,4 +1,4 @@
-# Python codes to compare the retrieval of impulse response function amplitudes with different methods ([Viens et al., 2017, GJI](https://academic.oup.com/gji/article/210/1/210/3747441))
+# Python codes to compare the retrieval of impulse response functions with different methods ([Viens et al., 2017, GJI](https://academic.oup.com/gji/article/210/1/210/3747441))
 
 ## Description:
 This repository contains the functions used in [Viens et al. (2017)](https://academic.oup.com/gji/article/210/1/210/3747441) along with an example.
