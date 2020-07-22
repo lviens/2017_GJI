@@ -1,4 +1,7 @@
-# Viens L., M. Denolle, H. Miyake, S. Sakai, S. Nakagawa (2017), Retrieving impulse response function amplitudes from the ambient seismic field, Geophys. J. Int.
+# Codes to compare the retrieval of impulse response function amplitudes with different methods ([Viens et al., 2017, GJI)](https://academic.oup.com/gji/article/210/1/210/3747441)
+
+
+The complete citation is: [Viens L., M. Denolle, H. Miyake, S. Sakai, S. Nakagawa (2017), Retrieving impulse response function amplitudes from the ambient seismic field, Geophys. J. Int.](https://academic.oup.com/gji/article/210/1/210/3747441)
 
 ## Description:
 This repository contains the functions used in [Viens et al. (2017)](https://academic.oup.com/gji/article/210/1/210/3747441) along with an example.
