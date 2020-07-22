@@ -1,6 +1,6 @@
 # Script to compute deconvolution, cross-correlation, and coherency.
-# L. Viens 04/28/2017
-# Code cleaned by L. Viens  22/07/2020
+# L. Viens: 04/28/2017
+# Code cleaned by L. Viens: 22/07/2020
 
 import numpy as np
 from obspy import read
