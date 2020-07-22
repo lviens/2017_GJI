@@ -5,7 +5,7 @@ This repository contains the functions used in [Viens et al. (2017)](https://aca
 
 In this example, Station 1 and Station 2 are two MeSO-net stations located in the Kanto region, Japan. The distance between the two stations is 8.26 km. Therefore, the waves observed in the causal (positive) part between ~10 and 25 s are likely Rayleigh waves. Note that the anti-causal (negative) and causal parts are strongly asymmetric due to the station locations, with Station 1 being closer to the Pacific Ocean than Station 2. Spurious arrivals near the zero time-lag can also be observed and disappear when the correlation functions are stacked over a longer time period.
 
-![Comparaison between the different methods](https://github.com/lviens/2017_GJI/tree/master/Figures/foo.png)
+![Comparaison between the different methods](https://github.com/lviens/2017_GJI/blob/master/Figures/foo.png)
 
 This repository contains:
 * **Codes** folder:
